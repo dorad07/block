@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TODO DE BLOCK - Fabricación y venta de block para construcción en Zacatecas, México." />
+  <title>TODO DE BLOCK | Solidez para tu construcción</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a href="#top" class="brand" aria-label="Inicio TODO DE BLOCK">
+        <span class="brand-icon">▦</span>
+        <span>TODO DE BLOCK</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="menu" id="main-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero section" id="inicio">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Fabricantes en Zacatecas, México</p>
+        <h1>Block de alta resistencia para obras que duran generaciones.</h1>
+        <p class="hero-text">Innovación industrial, calidad certificada y logística puntual para que tu proyecto avance con máxima solidez.</p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Cotiza tu proyecto</a>
+          <a href="#productos" class="btn btn-ghost">Ver productos</a>
+        </div>
+      </div>
+
+      <div class="hero-cubes" aria-hidden="true">
+        <div class="cube cube-a"></div>
+        <div class="cube cube-b"></div>
+        <div class="cube cube-c"></div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section products" id="productos">
+      <div class="section-title reveal">
+        <p class="eyebrow">Nuestro catálogo</p>
+        <h2>Productos diseñados para máxima eficiencia estructural</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal tilt-card">
+          <div class="product-chip">Alta demanda</div>
+          <h3>Block Hueco 12</h3>
+          <p>Ligero y resistente para muros divisorios y estructurales con gran rendimiento.</p>
+          <ul>
+            <li>Excelente aislamiento térmico</li>
+            <li>Dimensiones uniformes</li>
+            <li>Acabado profesional</li>
+          </ul>
+        </article>
+
+        <article class="product-card reveal tilt-card">
+          <div class="product-chip">Premium</div>
+          <h3>Block Macizo</h3>
+          <p>Ideal para cargas pesadas y zonas de alto esfuerzo estructural.</p>
+          <ul>
+            <li>Mayor densidad</li>
+            <li>Durabilidad superior</li>
+            <li>Resistencia comprobada</li>
+          </ul>
+        </article>
+
+        <article class="product-card reveal tilt-card">
+          <div class="product-chip">Especializado</div>
+          <h3>Adoquín de Concreto</h3>
+          <p>Solución estética y robusta para vialidades, patios y áreas de alto tránsito.</p>
+          <ul>
+            <li>Variedad de formatos</li>
+            <li>Bajo mantenimiento</li>
+            <li>Larga vida útil</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros">
+      <div class="about-layout">
+        <div class="about-media reveal">
+          <div class="about-photo" role="img" aria-label="Planta industrial de block"></div>
+        </div>
+        <div class="about-content reveal">
+          <p class="eyebrow">Quiénes somos</p>
+          <h2>Solidez industrial con visión tecnológica</h2>
+          <p>En TODO DE BLOCK combinamos procesos de manufactura de precisión con una cultura de servicio confiable. Cada pieza que producimos responde a estándares de calidad para obras residenciales, comerciales e industriales en todo Zacatecas.</p>
+
+          <div class="counter-grid">
+            <div class="counter-item neumorph">
+              <span class="counter" data-target="18">0</span>
+              <small>Años de experiencia</small>
+            </div>
+            <div class="counter-item neumorph">
+              <span class="counter" data-target="1200">0</span>
+              <small>Proyectos surtidos</small>
+            </div>
+            <div class="counter-item neumorph">
+              <span class="counter" data-target="98">0</span>
+              <small>% de entregas a tiempo</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="section-title reveal">
+        <p class="eyebrow">Contáctanos</p>
+        <h2>Recibe una cotización rápida y personalizada</h2>
+      </div>
+
+      <form class="contact-form glass reveal" action="#" method="post" novalidate>
+        <label>
+          Nombre
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
+        </label>
+        <label>
+          Teléfono
+          <input type="tel" name="telefono" placeholder="(492) 000-0000" required />
+        </label>
+        <label>
+          Proyecto
+          <input type="text" name="proyecto" placeholder="Tipo de obra" />
+        </label>
+        <label class="full">
+          Mensaje
+          <textarea name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary full">Enviar solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p>© <span id="year"></span> TODO DE BLOCK · Zacatecas, México</p>
+    <div class="socials" aria-label="Redes sociales">
+      <a href="#" aria-label="Facebook">Fb</a>
+      <a href="#" aria-label="Instagram">Ig</a>
+      <a href="#" aria-label="WhatsApp">Wa</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
