@@ -16,20 +16,26 @@ menuToggle.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded', String(expanded));
 });
 
+const closeMenu = () => {
+  navLinks.classList.remove('open');
+  menuToggle.classList.remove('active');
+  menuToggle.setAttribute('aria-expanded', 'false');
+};
+
 navLinks.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    menuToggle.classList.remove('active');
-    menuToggle.setAttribute('aria-expanded', 'false');
-  });
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('click', (event) => {
+  if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+    closeMenu();
+  }
 });
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      }
+      if (!entry.isIntersecting) return;
 
       entry.target.classList.add('visible');
       revealObserver.unobserve(entry.target);
@@ -43,9 +49,7 @@ revealElements.forEach((el) => revealObserver.observe(el));
 const countObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      }
+      if (!entry.isIntersecting) return;
 
       const el = entry.target;
       const target = Number(el.dataset.count);
@@ -59,9 +63,7 @@ const countObserver = new IntersectionObserver(
 
         el.textContent = `${value}${target === 100 ? '%' : '+'}`;
 
-        if (progress < 1) {
-          requestAnimationFrame(update);
-        }
+        if (progress < 1) requestAnimationFrame(update);
       };
 
       requestAnimationFrame(update);
@@ -75,7 +77,7 @@ counters.forEach((counter) => countObserver.observe(counter));
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  formFeedback.textContent = '¡Gracias! Te contactaremos a la brevedad con una propuesta.';
+  formFeedback.textContent = '¡Gracias! Recibimos tu solicitud y te contactaremos a la brevedad.';
   form.reset();
 });
 
