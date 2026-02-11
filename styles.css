@@ -94,7 +94,7 @@ body {
   transition: color 220ms ease;
 }
 
-.nav-links a:hover { color: #8ec6ff; }
+.nav-links a:hover { color: #ffffff; text-shadow: 0 0 10px rgba(217,48,48,.45); }
 
 .menu-toggle {
   display: none;
@@ -150,7 +150,7 @@ body {
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #a6ceff;
+  color: #ffb4b4;
   font-weight: 700;
   font-size: 0.78rem;
 }
@@ -212,7 +212,7 @@ body {
   font-size: 0.92rem;
 }
 
-.hero-trust strong { color: #9ad0ff; }
+.hero-trust strong { color: #ffb4b4; }
 
 .hero-visual {
   position: relative;
@@ -326,6 +326,11 @@ body {
   50% { opacity: 0.85; }
 }
 
+.section-title p {
+  color: #ffb4b4;
+  font-weight: 700;
+}
+
 .section-title h2 {
   margin-top: 0.1rem;
   font-size: clamp(1.5rem, 3.8vw, 2.2rem);
@@ -395,7 +400,7 @@ body {
 
 .stat-card {
   padding: 0.95rem;
-  background: rgba(255, 255, 255, 0.09);
+  background: linear-gradient(140deg, rgba(255,255,255,.12), rgba(217,48,48,.10));
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -415,6 +420,7 @@ body {
 .log-card {
   background: rgba(255, 255, 255, 0.09);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 3px solid rgba(217,48,48,.75);
   border-radius: 16px;
   padding: 1rem;
   box-shadow: var(--shadow-soft);
@@ -422,8 +428,18 @@ body {
 
 .log-card h3 { margin-top: 0; }
 
+.contact-form::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(217,48,48,.95), transparent);
+  border-radius: 18px 18px 0 0;
+}
+
 .contact-form {
   margin-top: 1.5rem;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.9rem;
