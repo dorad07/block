@@ -82,3 +82,23 @@ form.addEventListener('submit', (event) => {
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const tiltCards = document.querySelectorAll('[data-tilt-card]');
+
+tiltCards.forEach((card) => {
+  card.addEventListener('mousemove', (event) => {
+    if (window.matchMedia('(max-width: 760px)').matches) return;
+
+    const rect = card.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width;
+    const y = (event.clientY - rect.top) / rect.height;
+    const rotateY = (x - 0.5) * 12;
+    const rotateX = (0.5 - y) * 10;
+
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});

@@ -642,3 +642,159 @@ textarea:focus {
     transition: none !important;
   }
 }
+
+/* Extra motion layer: premium micro-animations */
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::after {
+  content: '';
+  position: absolute;
+  top: -140%;
+  left: -40%;
+  width: 55%;
+  height: 300%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.46), transparent);
+  transform: rotate(14deg);
+  transition: transform 600ms ease;
+}
+
+.product-card:hover::after {
+  transform: translateX(250%) rotate(14deg);
+}
+
+.logistics-road {
+  margin: 1.2rem 0 1rem;
+  height: 96px;
+  border-radius: 18px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(12, 20, 35, 0.28), rgba(12, 20, 35, 0.62));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+}
+
+.logistics-road::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(217, 48, 48, 0.18), transparent 28%, transparent 72%, rgba(30, 99, 208, 0.2));
+}
+
+.road-mark {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 200%;
+  height: 8px;
+  transform: translateY(-50%);
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.92) 0 42px,
+    transparent 42px 88px
+  );
+  animation: laneFlow 3.2s linear infinite;
+}
+
+.truck {
+  position: absolute;
+  left: -180px;
+  bottom: 12px;
+  width: 170px;
+  height: 64px;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.35));
+  animation: truckDrive 7s linear infinite;
+}
+
+.truck-cabin,
+.truck-box {
+  position: absolute;
+  border-radius: 8px;
+}
+
+.truck-cabin {
+  right: 0;
+  bottom: 20px;
+  width: 54px;
+  height: 30px;
+  background: linear-gradient(165deg, #f8fbff, #d6deeb);
+  border: 2px solid rgba(13, 71, 161, 0.5);
+}
+
+.truck-box {
+  left: 0;
+  bottom: 24px;
+  width: 110px;
+  height: 32px;
+  background: linear-gradient(165deg, #1e63d0, #0e3e8f);
+  border: 2px solid rgba(255, 255, 255, 0.44);
+}
+
+.truck-box::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.28);
+}
+
+.wheel {
+  position: absolute;
+  bottom: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #8f9aab 0 30%, #1d2530 32% 100%);
+  animation: spinWheel 620ms linear infinite;
+}
+
+.wheel-a { left: 26px; }
+.wheel-b { right: 20px; }
+
+@keyframes truckDrive {
+  0% {
+    left: -190px;
+    transform: translateY(0);
+  }
+  46% {
+    transform: translateY(-1px);
+  }
+  52% {
+    transform: translateY(0);
+  }
+  100% {
+    left: calc(100% + 12px);
+    transform: translateY(0);
+  }
+}
+
+@keyframes spinWheel {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes laneFlow {
+  from { transform: translate(-10%, -50%); }
+  to { transform: translate(10%, -50%); }
+}
+
+.log-card {
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+}
+
+.log-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(217, 48, 48, 0.7);
+}
+
+@media (max-width: 760px) {
+  .logistics-road {
+    height: 82px;
+  }
+
+  .truck {
+    transform: scale(0.9);
+    transform-origin: left bottom;
+  }
+}
