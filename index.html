@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TODO DE BLOCK: fabricación y venta de block para construcción en Zacatecas, México. Calidad, resistencia e innovación."
+    />
+    <title>TODO DE BLOCK | Construye con Solidez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <header class="site-header" id="inicio">
+      <nav class="navbar" id="navbar">
+        <a href="#inicio" class="logo">TODO <span>DE BLOCK</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero section-animate" id="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Zacatecas, México</p>
+          <h1>
+            Construimos <span>futuro sólido</span>
+            <br />bloque por bloque.
+          </h1>
+          <p>
+            En <strong>TODO DE BLOCK</strong> fabricamos block de alta resistencia para obras
+            residenciales, comerciales e industriales con entrega confiable y asesoría profesional.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
+            <a class="btn btn-ghost" href="#productos">Ver productos</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="floating-block block-a"></div>
+          <div class="floating-block block-b"></div>
+          <div class="floating-block block-c"></div>
+          <div class="glow"></div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="products section" id="productos">
+        <div class="section-title section-animate">
+          <p>Catálogo</p>
+          <h2>Productos diseñados para máxima resistencia</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="assets/block-solido.svg" alt="Block sólido de concreto" />
+            <h3>Block Sólido</h3>
+            <p>Ideal para muros de carga y estructuras que requieren alta robustez.</p>
+            <span>Resistencia premium</span>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="assets/block-hueco.svg" alt="Block hueco estructural" />
+            <h3>Block Hueco</h3>
+            <p>Excelente equilibrio entre resistencia, aislamiento y eficiencia constructiva.</p>
+            <span>Optimización térmica</span>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="assets/block-especial.svg" alt="Block especial para acabados" />
+            <h3>Block Especial</h3>
+            <p>Acabado más fino para proyectos con altos estándares estéticos y técnicos.</p>
+            <span>Diseño de precisión</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section" id="nosotros">
+        <div class="about-content reveal">
+          <p class="eyebrow">Nosotros</p>
+          <h2>Innovación industrial con experiencia local</h2>
+          <p>
+            Somos una empresa zacatecana comprometida con la calidad del concreto y la mejora
+            continua. Nuestra planta integra procesos modernos para garantizar piezas uniformes,
+            fuertes y listas para cualquier reto de construcción.
+          </p>
+
+          <div class="stats">
+            <div class="stat-card">
+              <strong data-count="12">0</strong>
+              <span>Años de experiencia</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="780">0</strong>
+              <span>Obras atendidas</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="100">0</strong>
+              <span>Compromiso de calidad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal" aria-hidden="true">
+          <img src="assets/planta-block.svg" alt="Ilustración de planta de block" />
+        </div>
+      </section>
+
+      <section class="contact section" id="contacto">
+        <div class="section-title reveal">
+          <p>Contacto</p>
+          <h2>Hablemos de tu próximo proyecto</h2>
+        </div>
+
+        <form class="contact-form reveal" aria-label="Formulario de contacto">
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Tu nombre" required />
+          </div>
+          <div class="field">
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" type="tel" placeholder="Tu teléfono" required />
+          </div>
+          <div class="field full-width">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>© <span id="year"></span> TODO DE BLOCK · Zacatecas, México</p>
+      <div class="socials" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook">◉</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="WhatsApp">◍</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
