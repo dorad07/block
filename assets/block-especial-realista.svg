@@ -1,0 +1,25 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 760'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#6f7c90'/><stop offset='1' stop-color='#2e3745'/>
+    </linearGradient>
+    <linearGradient id='blk' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0' stop-color='#e1e7ef'/><stop offset='1' stop-color='#a8b2c0'/>
+    </linearGradient>
+    <filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/><feColorMatrix type='saturate' values='0.25'/><feComponentTransfer><feFuncA type='table' tableValues='0 0.09'/></feComponentTransfer></filter>
+  </defs>
+  <rect width='1200' height='760' fill='url(#bg)'/>
+  <g transform='translate(95 190)'>
+    <rect x='0' y='0' width='1010' height='340' rx='20' fill='url(#blk)'/>
+    <rect x='30' y='34' width='950' height='272' rx='16' fill='#b5bfcd'/>
+    <g fill='#8b97a8'>
+      <rect x='70' y='74' width='220' height='94' rx='12'/>
+      <rect x='320' y='74' width='220' height='94' rx='12'/>
+      <rect x='570' y='74' width='220' height='94' rx='12'/>
+      <rect x='195' y='186' width='220' height='94' rx='12'/>
+      <rect x='445' y='186' width='220' height='94' rx='12'/>
+    </g>
+  </g>
+  <rect x='0' y='0' width='1200' height='760' fill='none' stroke='#d93030' stroke-width='10' stroke-opacity='.5'/>
+  <rect width='1200' height='760' filter='url(#noise)' opacity='.6'/>
+</svg>

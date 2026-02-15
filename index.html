@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TODO DE BLOCK: fabricación y venta de block para construcción en Zacatecas, México. Calidad, resistencia, logística y entrega profesional."
+    />
+    <title>TODO DE BLOCK | Construye con Solidez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-gradient" aria-hidden="true"></div>
+
+    <header class="site-header" id="inicio">
+      <nav class="navbar" id="navbar">
+        <a href="#inicio" class="logo">TODO <span>DE BLOCK</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#logistica">Logística</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero section-animate" id="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Zacatecas, México</p>
+          <h1>
+            Fabricación y entrega de block con
+            <span>nivel industrial</span>
+          </h1>
+          <p>
+            En <strong>TODO DE BLOCK</strong> fabricamos block de alto desempeño para obra
+            residencial, comercial e industrial. Garantizamos calidad en planta y entrega puntual
+            en sitio para mantener tu proyecto en ritmo.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
+            <a class="btn btn-ghost" href="#productos">Ver productos</a>
+          </div>
+
+          <ul class="hero-trust" aria-label="Indicadores de confianza">
+            <li><strong>Entrega</strong> puntual en obra</li>
+            <li><strong>Control</strong> de calidad por lote</li>
+            <li><strong>Cobertura</strong> en Zacatecas y alrededores</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img
+            src="assets/logistica-realista.svg"
+            alt=""
+          />
+          <div class="photo-badge">Producción diaria certificada</div>
+          <div class="floating-block block-a"></div>
+          <div class="floating-block block-b"></div>
+          <div class="glow"></div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="products section" id="productos">
+        <div class="section-title section-animate">
+          <p>Catálogo</p>
+          <h2>Soluciones de block para cada tipo de construcción</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal" data-tilt-card="true">
+            <img
+              src="assets/block-solido-realista.svg"
+              alt="Pila de block de concreto"
+              loading="lazy"
+            />
+            <h3>Block Sólido</h3>
+            <p>Máxima resistencia mecánica para muros de carga y zonas de alta exigencia.</p>
+            <span>Resistencia premium</span>
+          </article>
+
+          <article class="product-card reveal" data-tilt-card="true">
+            <img
+              src="assets/block-hueco-realista.svg"
+              alt="Block hueco en obra"
+              loading="lazy"
+            />
+            <h3>Block Hueco</h3>
+            <p>Balance perfecto entre desempeño estructural, rendimiento y aislamiento.</p>
+            <span>Eficiencia constructiva</span>
+          </article>
+
+          <article class="product-card reveal" data-tilt-card="true">
+            <img
+              src="assets/block-especial-realista.svg"
+              alt="Transporte de materiales para construcción"
+              loading="lazy"
+            />
+            <h3>Block Especial</h3>
+            <p>Formato técnico y acabados para proyectos con requerimientos específicos.</p>
+            <span>Precisión profesional</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section" id="nosotros">
+        <div class="about-content reveal">
+          <p class="eyebrow">Nosotros</p>
+          <h2>Empresa seria, técnica y enfocada en resultados</h2>
+          <p>
+            Somos una empresa zacatecana especializada en fabricar block con procesos de control,
+            trazabilidad por lote y atención puntual al constructor. Nuestro objetivo es darte un
+            suministro confiable y un servicio profesional de principio a fin.
+          </p>
+
+          <div class="stats">
+            <div class="stat-card">
+              <strong data-count="12">0</strong>
+              <span>Años de experiencia</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="780">0</strong>
+              <span>Obras atendidas</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="100">0</strong>
+              <span>Compromiso de calidad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal" aria-hidden="true">
+          <img
+            src="assets/logistica-realista.svg"
+            alt="Camión con material de construcción"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="logistics section" id="logistica">
+        <div class="section-title reveal">
+          <p>Logística</p>
+          <h2>Entrega confiable directamente a tu obra</h2>
+        </div>
+        <div class="logistics-grid">
+        <div class="logistics-road reveal" aria-hidden="true">
+          <div class="road-mark"></div>
+          <div class="truck" id="truckAnim">
+            <div class="truck-cabin"></div>
+            <div class="truck-box"></div>
+            <div class="wheel wheel-a"></div>
+            <div class="wheel wheel-b"></div>
+          </div>
+        </div>
+          <article class="log-card reveal">
+            <h3>Cobertura estratégica</h3>
+            <p>Atendemos Zacatecas capital, Guadalupe y municipios cercanos con rutas diarias.</p>
+          </article>
+          <article class="log-card reveal">
+            <h3>Programación de entregas</h3>
+            <p>Coordinamos la entrega por fases para evitar retrasos y sobrecostos de almacenamiento.</p>
+          </article>
+          <article class="log-card reveal">
+            <h3>Atención ejecutiva</h3>
+            <p>Te acompañamos con cotización, confirmación y seguimiento hasta la recepción del pedido.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contacto">
+        <div class="section-title reveal">
+          <p>Contacto</p>
+          <h2>Hablemos de tu próximo proyecto</h2>
+        </div>
+
+        <form class="contact-form reveal" aria-label="Formulario de contacto">
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Tu nombre" required />
+          </div>
+          <div class="field">
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" type="tel" placeholder="Tu teléfono" required />
+          </div>
+          <div class="field">
+            <label for="obra">Ubicación de obra</label>
+            <input id="obra" type="text" placeholder="Colonia / Municipio" />
+          </div>
+          <div class="field">
+            <label for="volumen">Volumen estimado</label>
+            <input id="volumen" type="text" placeholder="Ej. 4,500 piezas" />
+          </div>
+          <div class="field full-width">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>© <span id="year"></span> TODO DE BLOCK · Zacatecas, México</p>
+      <div class="socials" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="WhatsApp">wa</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
